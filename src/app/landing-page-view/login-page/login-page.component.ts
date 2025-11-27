@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
-import { IGX_INPUT_GROUP_DIRECTIVES, IgxButtonDirective, IgxCheckboxComponent } from 'igniteui-angular';
 
 @Component({
   selector: 'app-login-page',
-  imports: [IGX_INPUT_GROUP_DIRECTIVES, IgxCheckboxComponent, IgxButtonDirective, FormsModule, RouterLink],
+  standalone: false,
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.scss']
 })
