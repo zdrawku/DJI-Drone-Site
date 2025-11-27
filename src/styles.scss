@@ -9,13 +9,13 @@
 @include typography($font-family: "Roboto");
 
 $custom-palette: palette(
-  $primary: #3F51B5,
-  $secondary: #009688,
-  $surface: #F5F7FA,
-  $error: #D32F2F,
-  $success: #388E3C,
-  $warn: #FBC02D,
-  $info: #1976D2);
+  $primary: #E54B4B,
+  $secondary: #FFB347,
+  $surface: #FFFBF3,
+  $error: #B00020,
+  $success: #4CAF50,
+  $warn: #FFC107,
+  $info: #2196F3);
 @include theme($palette: $custom-palette, $schema: $light-material-schema, $roundness: 0.5);
 
 body {

@@ -1,12 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { IGX_GRID_DIRECTIVES } from 'igniteui-angular';
 import { Subject, takeUntil } from 'rxjs';
 import { DjiDronesComparisonType } from '../models/dji-drone-comparison/dji-drones-comparison-type';
 import { DjiDroneComparisonService } from '../services/dji-drone-comparison.service';
 
 @Component({
   selector: 'app-drone-comparison-view',
-  imports: [IGX_GRID_DIRECTIVES],
+  standalone: false,
   templateUrl: './drone-comparison-view.component.html',
   styleUrls: ['./drone-comparison-view.component.scss']
 })

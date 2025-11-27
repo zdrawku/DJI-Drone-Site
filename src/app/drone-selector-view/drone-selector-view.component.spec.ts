@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IGX_TABS_DIRECTIVES } from 'igniteui-angular';
+import { IgxTabsModule } from 'igniteui-angular';
 import { DroneSelectorViewComponent } from './drone-selector-view.component';
 
 describe('DroneSelectorViewComponent', () => {
@@ -11,7 +11,8 @@ describe('DroneSelectorViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DroneSelectorViewComponent, NoopAnimationsModule, FormsModule, ReactiveFormsModule, IGX_TABS_DIRECTIVES]
+      declarations: [DroneSelectorViewComponent],
+      imports: [NoopAnimationsModule, FormsModule, ReactiveFormsModule, IgxTabsModule]
     })
     .compileComponents();
 

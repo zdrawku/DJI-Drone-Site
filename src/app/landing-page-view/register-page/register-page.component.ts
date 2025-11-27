@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { IGX_INPUT_GROUP_DIRECTIVES, IgxButtonDirective } from 'igniteui-angular';
 
 @Component({
   selector: 'app-register-page',
-  imports: [IGX_INPUT_GROUP_DIRECTIVES, IgxButtonDirective, FormsModule],
+  standalone: false,
   templateUrl: './register-page.component.html',
   styleUrls: ['./register-page.component.scss']
 })

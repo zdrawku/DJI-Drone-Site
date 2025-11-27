@@ -3,7 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IGX_GRID_DIRECTIVES } from 'igniteui-angular';
+import { IgxGridModule } from 'igniteui-angular';
 import { DroneComparisonViewComponent } from './drone-comparison-view.component';
 
 describe('DroneComparisonViewComponent', () => {
@@ -12,7 +12,8 @@ describe('DroneComparisonViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DroneComparisonViewComponent, NoopAnimationsModule, FormsModule, ReactiveFormsModule, HttpClientTestingModule, IGX_GRID_DIRECTIVES]
+      declarations: [DroneComparisonViewComponent],
+      imports: [NoopAnimationsModule, FormsModule, ReactiveFormsModule, HttpClientTestingModule, IgxGridModule]
     })
     .compileComponents();
 

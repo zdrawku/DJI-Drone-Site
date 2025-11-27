@@ -1,4 +1,5 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { LandingPageViewComponent } from './landing-page-view.component';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -14,3 +15,9 @@ export const routes: Routes = [
     ]
   },
 ];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class LandingPageViewRoutingModule { }

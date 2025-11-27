@@ -1,9 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterTestingModule } from '@angular/router/testing';
 
-import { IGX_INPUT_GROUP_DIRECTIVES, IgxCheckboxComponent, IgxButtonDirective } from 'igniteui-angular';
+import { IgxInputGroupModule, IgxCheckboxModule, IgxButtonModule } from 'igniteui-angular';
 import { LoginPageComponent } from './login-page.component';
 
 describe('LoginPageComponent', () => {
@@ -12,7 +11,8 @@ describe('LoginPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LoginPageComponent, NoopAnimationsModule, FormsModule, ReactiveFormsModule, RouterTestingModule, IGX_INPUT_GROUP_DIRECTIVES, IgxCheckboxComponent, IgxButtonDirective]
+      declarations: [LoginPageComponent],
+      imports: [NoopAnimationsModule, FormsModule, ReactiveFormsModule, IgxInputGroupModule, IgxCheckboxModule, IgxButtonModule]
     })
     .compileComponents();
 

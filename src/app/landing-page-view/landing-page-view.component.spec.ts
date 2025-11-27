@@ -3,7 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { IGX_NAVBAR_DIRECTIVES, IgxIconComponent, IgxButtonDirective, IgxIconButtonDirective } from 'igniteui-angular';
+import { IgxNavbarModule, IgxIconModule, IgxButtonModule } from 'igniteui-angular';
 import { LandingPageViewComponent } from './landing-page-view.component';
 
 describe('LandingPageViewComponent', () => {
@@ -12,7 +12,8 @@ describe('LandingPageViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LandingPageViewComponent, NoopAnimationsModule, FormsModule, ReactiveFormsModule, RouterTestingModule, IGX_NAVBAR_DIRECTIVES, IgxIconComponent, IgxButtonDirective, IgxIconButtonDirective]
+      declarations: [LandingPageViewComponent],
+      imports: [NoopAnimationsModule, FormsModule, ReactiveFormsModule, RouterTestingModule, IgxNavbarModule, IgxIconModule, IgxButtonModule]
     })
     .compileComponents();
 
