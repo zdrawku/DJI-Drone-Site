@@ -1,0 +1,17 @@
+<h3 class="content">
+  Consumer Drones Comparison
+</h3>
+<p class="content">
+  Compare key specifications of various DJI drone models to find your best match.
+</p>
+<igx-grid [data]="djiDroneComparisonDjiDronesComparison" [allowFiltering]="true" filterMode="excelStyleFilter" class="drone-comparison-grid">
+  <igx-column field="model" header="Model" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Takeoff Weight (g)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Dimensions (mm)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Max Ascent Speed (m/s)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Max Takeoff Altitude (m)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Max Flight Time (min)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Max Flight Distance (km)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="model" header="Operating Temperature (°C)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="camera" header="Camera" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>

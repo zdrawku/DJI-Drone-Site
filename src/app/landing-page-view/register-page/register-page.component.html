@@ -1,0 +1,33 @@
+<div class="row-layout registration-form-row">
+  <div class="column-layout registration-form-column">
+    <h4 class="register-title">
+      Register
+    </h4>
+    <div class="column-layout register-input-column">
+      <igx-input-group type="border" class="register-email-input">
+        <input type="email" [(ngModel)]="value" required="true" igxInput #igxInput />
+        <label igxLabel>Email address</label>
+        @if (igxInput.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="register-email-input">
+        <input type="password" [(ngModel)]="value1" required="true" igxInput #igxInput1 />
+        <label igxLabel>Password</label>
+        @if (igxInput1.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="register-email-input">
+        <input type="password" [(ngModel)]="value2" required="true" igxInput #igxInput2 />
+        <label igxLabel>Password</label>
+        @if (igxInput2.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <button igxButton="contained" type="button" class="register-button">
+        Register
+      </button>
+    </div>
+  </div>
+</div>

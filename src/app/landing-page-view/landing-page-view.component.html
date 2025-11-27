@@ -1,0 +1,38 @@
+<igx-navbar class="landing-page-nav-bar">
+  <igx-navbar-title class="navbar-content">
+    <div [routerLink]="['/landing-page-view/main-page']" class="row-layout nav-bar-title-row">
+      <igx-icon class="nav-bar-icon">
+        airplanemode_active
+      </igx-icon>
+      <h6 class="nav-bar-title">
+        DJI Drones
+      </h6>
+    </div>
+    <button igxButton="flat" type="button" class="how-it-works-button">
+      How it Works
+    </button>
+    <button igxButton="flat" type="button" class="how-it-works-button">
+      Features
+    </button>
+    <button igxButton="flat" type="button" class="how-it-works-button">
+      Pricing
+    </button>
+    <button igxButton="flat" type="button" class="how-it-works-button">
+      FAQ
+    </button>
+  </igx-navbar-title>
+  <button igxIconButton="flat" class="search-button">
+    <igx-icon class="icon">
+      search
+    </igx-icon>
+  </button>
+  <button igxButton="contained" type="button" [routerLink]="['/landing-page-view/register-page']" class="how-it-works-button">
+    Sign Up
+  </button>
+  <button igxButton="flat" type="button" [routerLink]="['/landing-page-view/login-page']" class="how-it-works-button">
+    Login
+  </button>
+</igx-navbar>
+<div class="landing-page-container">
+  <router-outlet></router-outlet>
+</div>
